@@ -14,7 +14,7 @@ Enforce a specific host name for your Fastify app
 ## Usage
 
 ```javascript
-import fastify from 'fastify';
+import { fastify } from 'fastify';
 
 const app = fastify();
 
