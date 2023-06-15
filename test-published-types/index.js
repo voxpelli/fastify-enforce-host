@@ -1,6 +1,9 @@
 /// <reference types="node" />
 
-import { something } from '@voxpelli/node-module-template';
+import fastify from 'fastify';
 
-// eslint-disable-next-line no-console
-console.log(something());
+const app = fastify();
+
+app.register(import('@yikesable/fastify-enforce-host'), {
+  baseUrl: `http://localhost:3000/`
+});

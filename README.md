@@ -1,6 +1,6 @@
-# Node Module Template
+# Fastify Enforce Host
 
-A GitHub template repo for node modules
+Enforce a specific host name for your Fastify app
 
 <!--
 [![npm version](https://img.shields.io/npm/v/buffered-async-iterable.svg?style=flat)](https://www.npmjs.com/package/buffered-async-iterable)
@@ -13,25 +13,24 @@ A GitHub template repo for node modules
 
 ## Usage
 
-### Simple
-
 ```javascript
-import { something } from '@voxpelli/node-module-template';
+import fastify from 'fastify';
 
-// Use that something
+const app = fastify();
+
+app.register(import('@yikesable/fastify-enforce-host'), {
+  baseUrl: 'http://localhost:3000/',
+});
+
 ```
 
-## API
-
-### `something(input, { configParam }) => Promise<output>`
-
-Takes a value (`input`), does something configured by the config (`configParam`) and returns the processed value asyncly(`output`)
-
+<!--
 ## Similar modules
 
-* [`example`](https://example.com/) – is similar in this way
+*
 
 ## See also
 
 * [Announcement blog post](#)
 * [Announcement tweet](#)
+-->

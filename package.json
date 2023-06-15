@@ -1,14 +1,17 @@
 {
-  "name": "@voxpelli/node-module-template",
+  "name": "@yikesable/fastify-enforce-host",
   "version": "0.0.0",
-  "description": "A GitHub template repo for node modules",
-  "homepage": "http://github.com/voxpelli/node-module-template",
+  "description": "Enforce a specific host name for your Fastify app",
+  "homepage": "http://github.com/yikesable/fastify-enforce-host",
   "repository": {
     "type": "git",
-    "url": "git://github.com/voxpelli/node-module-template.git"
+    "url": "git://github.com/yikesable/fastify-enforce-host.git"
   },
-  "keywords": [],
-  "author": "Pelle Wessman <pelle@kodfabrik.se> (http://kodfabrik.se/)",
+  "keywords": [
+    "fastify",
+    "fastify-plugin"
+  ],
+  "author": "Pelle Wessman <pelle@yikesable.dev> (https://yikesable.dev/)",
   "license": "MIT",
   "engines": {
     "node": ">=16.0.0"
@@ -60,6 +63,7 @@
     "eslint-plugin-security": "^1.7.1",
     "eslint-plugin-sort-destructure-keys": "^1.5.0",
     "eslint-plugin-unicorn": "^47.0.0",
+    "fastify": "^4.18.0",
     "husky": "^8.0.3",
     "installed-check": "^7.1.1",
     "knip": "^2.13.0",
@@ -67,5 +71,8 @@
     "npm-run-all2": "^6.0.5",
     "type-coverage": "^2.26.0",
     "typescript": "~5.1.3"
+  },
+  "dependencies": {
+    "fastify-plugin": "^4.5.0"
   }
 }

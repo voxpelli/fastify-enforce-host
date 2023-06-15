@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
-    "@voxpelli/node-module-template": "file:.."
+    "@yikesable/fastify-enforce-host": "file:..",
+    "fastify": "^4.0.0"
   }
 }
