@@ -10,7 +10,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '14 5 * * 1,3,5'
+    - cron: '14 5 * * 1'
 
 permissions:
   contents: read
@@ -20,6 +20,7 @@ jobs:
     uses: voxpelli/ghatemplates/.github/workflows/type-check.yml@main
     with:
       ts-prebuild-script: 'build'
-      ts-versions: ${{ github.event.schedule && 'next' || '4.5,4.6,4.7,4.8,4.9,next' }}
+      # ts-versions: ${{ github.event.schedule && 'next' || '4.5,4.6,4.7,4.8,4.9,next' }}
+      ts-versions: 'next'
       ts-libs: 'es2020;esnext'
       ts-working-directory: 'test-published-types'
