@@ -1,6 +1,6 @@
 {
   "name": "@yikesable/fastify-enforce-host",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Enforce a specific host name for your Fastify app",
   "homepage": "http://github.com/yikesable/fastify-enforce-host",
   "repository": {
