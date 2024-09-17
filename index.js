@@ -43,4 +43,4 @@ const fastifyEnforceHost = async (fastify, { baseUrl }) => {
   });
 };
 
-export default fp(fastifyEnforceHost, { fastify: '>=4.x' });
+export default fp(fastifyEnforceHost, { fastify: '>=5.x' });
