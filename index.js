@@ -14,7 +14,7 @@ const fastifyEnforceHost = async (fastify, { baseUrl }) => {
   const parsedUrl = new URL(baseUrl);
 
   const desiredProtocol = parsedUrl.protocol.slice(0, -1);
-  const desiredHost = parsedUrl.host;
+  const desiredHost = parsedUrl.hostname;
 
   fastify.addHook('onRequest', (request, reply, done) => {
     const usedProtocol = request.protocol;
