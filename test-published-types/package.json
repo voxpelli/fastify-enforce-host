@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "preinstall": "npm install \"../$(cd .. && npm pack --json | jq \".[].filename\" -r)\""
+    "preinstall": "mv \"../$(cd .. && npm pack --json | jq \".[].filename\" -r)\" ../voxpelli-fastify-enforce-host.tgz"
   },
   "dependencies": {
-    "@voxpelli/fastify-enforce-host": "file:../voxpelli-fastify-enforce-host-0.3.0.tgz",
+    "@voxpelli/fastify-enforce-host": "file:../voxpelli-fastify-enforce-host.tgz",
     "fastify": "^5.0.0"
   }
 }
