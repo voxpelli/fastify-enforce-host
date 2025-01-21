@@ -39,8 +39,8 @@
     "check": "run-s clean && run-p check:*",
     "clean:declarations": "rm -rf $(find . -maxdepth 2 -type f -name '*.d.ts*' ! -name 'advanced-types.d.ts')",
     "clean": "run-p clean:*",
+    "prepack": "run-s build",
     "prepare": "husky",
-    "prepublishOnly": "run-s build",
     "test:mocha": "c8 --reporter=lcov --reporter text mocha 'test/**/*.spec.js'",
     "test-ci": "run-s test:*",
     "test": "run-s check test:*"

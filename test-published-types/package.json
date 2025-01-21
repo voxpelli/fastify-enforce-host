@@ -3,8 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "scripts": {
+    "preinstall": "npm install \"../$(cd .. && npm pack --json | jq \".[].filename\" -r)\""
+  },
   "dependencies": {
-    "@voxpelli/fastify-enforce-host": "file:..",
+    "@voxpelli/fastify-enforce-host": "file:../voxpelli-fastify-enforce-host-0.3.0.tgz",
     "fastify": "^5.0.0"
   }
 }
