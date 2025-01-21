@@ -22,6 +22,6 @@ jobs:
       ts-libs: 'es2020;esnext'
       ts-prebuild-script-working-directory: 'test-published-types'
       ts-prebuild-script: 'build-tarball'
-      ts-versions: ${{ github.event.schedule && 'next' || '4.5,4.8,5.1,5.5,5.6,5.7,next' }}
+      ts-versions: ${{ github.event.schedule && 'next' || '5.4,5.5,5.6,5.7,next' }}
       # ts-versions: 'next'
       ts-working-directory: 'test-published-types'
