@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   type-check:
-    uses: yikesable/workflows/.github/workflows/type-check.yml@main
+    uses: voxpelli/ghatemplates/.github/workflows/type-check.yml@main
     with:
       ts-prebuild-script: 'build'
       # ts-versions: ${{ github.event.schedule && 'next' || '4.5,4.6,4.7,4.8,4.9,next' }}
