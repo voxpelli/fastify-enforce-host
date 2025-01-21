@@ -1,17 +1,17 @@
 {
-  "name": "@yikesable/fastify-enforce-host",
+  "name": "@voxpelli/fastify-enforce-host",
   "version": "0.3.0",
   "description": "Enforce a specific host name for your Fastify app",
-  "homepage": "http://github.com/yikesable/fastify-enforce-host",
+  "homepage": "http://github.com/voxpelli/fastify-enforce-host",
   "repository": {
     "type": "git",
-    "url": "git://github.com/yikesable/fastify-enforce-host.git"
+    "url": "git://github.com/voxpelli/fastify-enforce-host.git"
   },
   "keywords": [
     "fastify",
     "fastify-plugin"
   ],
-  "author": "Pelle Wessman <pelle@yikesable.dev> (https://yikesable.dev/)",
+  "author": "Pelle Wessman <pelle@kodfabrik.se> (https://kodfabrik.se/)",
   "license": "MIT",
   "engines": {
     "node": "^20.9.0 || >=21.1.0"
