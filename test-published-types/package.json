@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "preinstall": "mv \"../$(cd .. && npm pack --json | jq \".[].filename\" -r)\" ../voxpelli-fastify-enforce-host.tgz"
+    "build-tarball": "mv \"../$(cd .. && npm pack --json | jq \".[].filename\" -r)\" ../voxpelli-fastify-enforce-host.tgz",
+    "preinstall": "npm run build-tarball"
   },
   "dependencies": {
     "@voxpelli/fastify-enforce-host": "file:../voxpelli-fastify-enforce-host.tgz",
